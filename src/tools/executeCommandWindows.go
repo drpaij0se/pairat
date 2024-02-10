@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"os/exec"
 
-	noansi "github.com/ELPanaJose/api-deno-compiler/src/routes/others"
 	"github.com/labstack/echo"
 )
 
@@ -20,10 +19,9 @@ func ExecuteCommandWindowsNoAnsi(c echo.Context, command string) {
 	if peo != nil {
 		fmt.Println(peo)
 	}
-	output := noansi.NoAnsi(stdout.String() + stderr.String())
 	c.Response().Header().Set("Content-Type", "application/json")
 	c.Response().WriteHeader(http.StatusCreated)
-	json.NewEncoder(c.Response()).Encode(output)
+	json.NewEncoder(c.Response()).Encode(stdout.String() + stderr.String())
 
 }
 
@@ -36,8 +34,7 @@ func ExecuteCommandWindowsColor(c echo.Context, command string) {
 	if peo != nil {
 		fmt.Println(peo)
 	}
-	output := noansi.NoAnsi(stdout.String() + stderr.String())
 	c.Response().Header().Set("Content-Type", "application/json")
 	c.Response().WriteHeader(http.StatusCreated)
-	json.NewEncoder(c.Response()).Encode(output)
+	json.NewEncoder(c.Response()).Encode(stdout.String() + stderr.String())
 }

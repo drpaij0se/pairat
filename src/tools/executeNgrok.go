@@ -15,7 +15,7 @@ import (
 )
 
 var (
-	detectNgrok     = regexp.MustCompile(`(https:)([/|.|\w|\s|-])*\.(?:io)`) // this is the regex for get the url
+	detectNgrok     = regexp.MustCompile(`(https:)([/|.|\w|\s|-])*\.(?:app)`) // this is the regex for get the url
 	cono        int = 0
 )
 
