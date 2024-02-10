@@ -1,4 +1,4 @@
-git clone https://github.com/paij0se/pairat
+git clone https://github.com/drpaij0se/pairat
 cd pairat
 go get .
 go build -o pairat main.go
