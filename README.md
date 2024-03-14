@@ -4,11 +4,7 @@
 
 <h1>Server</h1>
 
-<img src="https://mamalinda.tk/monda/sisa.png">
-
-<h1>https://github.com/paij0se/pairat-cli</h1>
-
-<img src="https://mamalinda.tk/monda/cli.gif">
+![alt text](image.png)
 
 <h1>Prerequisites</h1>
 
@@ -18,12 +14,12 @@
 
 <h1>Installation</h1>
 
-- download the binary files from: https://github.com/paij0se/pairat/releases
+- download the binary files from: https://github.com/drpaij0se/pairat/releases
 
 - or download it from curl:
 
 ```bash
-curl https://raw.githubusercontent.com/paij0se/pairat/main/install.sh | bash
+curl https://raw.githubusercontent.com/drpaij0se/pairat/main/install.sh | bash
 ```
 
 <h1>Build</h1>
@@ -41,6 +37,3 @@ build the program  ```go build -o pairat main.go```
 - [ ] improve the web client
 - [ ] use it remote without ngrok
 - [x] working in windows correctly
-
-
-# pairat

@@ -3,7 +3,7 @@ package routes
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"runtime"
 
 	tools "github.com/drpaij0se/pairat/src/tools"
@@ -18,7 +18,7 @@ func UploadCommand(c echo.Context) error {
 	switch runtime.GOOS {
 	case "linux", "darwin":
 		var inputCommand command
-		reqBody, err := ioutil.ReadAll(c.Request().Body)
+		reqBody, err := io.ReadAll(c.Request().Body)
 		if err != nil {
 			fmt.Fprintf(c.Response(), "Error")
 		}
@@ -31,7 +31,7 @@ func UploadCommand(c echo.Context) error {
 
 	case "windows":
 		var inputCommand command
-		reqBody, err := ioutil.ReadAll(c.Request().Body)
+		reqBody, err := io.ReadAll(c.Request().Body)
 		if err != nil {
 			fmt.Fprintf(c.Response(), "Error")
 		}
