@@ -14,12 +14,12 @@
 
 <h1>Installation</h1>
 
-- download the binary files from: https://github.com/drpaij0se/pairat/releases
+- download the binary files from: https://github.com/paij0se/pairat/releases
 
 - or download it from curl:
 
 ```bash
-curl https://raw.githubusercontent.com/drpaij0se/pairat/main/install.sh | bash
+curl https://raw.githubusercontent.com/paij0se/pairat/main/install.sh | bash
 ```
 
 <h1>Build</h1>

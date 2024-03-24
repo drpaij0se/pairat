@@ -1,7 +1,7 @@
 package routes
 
 import (
-	routes "github.com/drpaij0se/pairat/src/controllers"
+	routes "github.com/paij0se/pairat/src/controllers"
 	"github.com/labstack/echo"
 )
 

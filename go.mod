@@ -1,4 +1,4 @@
-module github.com/drpaij0se/pairat
+module github.com/paij0se/pairat
 
 go 1.16
 

@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"runtime"
 
-	tools "github.com/drpaij0se/pairat/src/tools"
+	tools "github.com/paij0se/pairat/src/tools"
 	"github.com/labstack/echo"
 )
 
